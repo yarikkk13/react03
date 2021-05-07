@@ -25,7 +25,17 @@ export default function Users() {
             </div>
             <div className={'single-user-box'}>
                 {
-                    singleUser ? (<h2>{singleUser.id} - {singleUser.username}</h2>) : (<div>user not defined</div>)
+                    singleUser ? (
+                        <div>
+                            <h2>{singleUser.id} - {singleUser.username}</h2>
+                            <div><p>{singleUser.email}</p>
+                                <p>{singleUser.website}</p>
+                                <p>{singleUser.phone}</p>
+                                <p>{singleUser.address.city}</p>
+                                <p>{singleUser.address.street}</p>
+                                <p>{singleUser.company.name}</p>
+                            </div>
+                        </div>) : (<div>user not defined</div>)
                 }
             </div>
 

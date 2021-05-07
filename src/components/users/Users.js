@@ -12,9 +12,7 @@ export default function Users() {
     const search = (id) => {
         let foundUser = users.find(value => value.id === id);
         setSingleUser(foundUser)
-
     };
-
     return (
         <div className={'wrap'}>
             <div className={'users-box'}>
@@ -25,7 +23,6 @@ export default function Users() {
                         search={search}/>)
                 }
             </div>
-
             <div className={'single-user-box'}>
                 {
                     singleUser ? (<h2>{singleUser.id} - {singleUser.username}</h2>) : (<div>user not defined</div>)

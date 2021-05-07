@@ -1,0 +1,15 @@
+.bigDiv {
+    display: flex;
+}
+
+.posts {
+    border: 1px solid;
+    width: fit-content;
+    padding: 10px;
+}
+
+.post-description {
+    border: 2px solid green;
+    width: fit-content;
+    padding: 10px;
+}
